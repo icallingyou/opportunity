@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NYFA 아티스트 펀드 가이드 2026–27</title>
+<meta name="description" content="뉴욕예술재단(NYFA, New York Foundation for the Arts)이 운영하는 아티스트 지원금·펠로우십·긴급지원을 한국어로 정리. 프로그램별 자격 요건, 제출 서류, 접수·통보 타임라인을 한눈에.">
+<meta property="og:title" content="NYFA 아티스트 펀드 가이드 2026–27">
+<meta property="og:description" content="NYFA 지원금 10개 프로그램의 자격 요건·제출 서류·타임라인을 한국어로 정리했습니다.">
+<meta property="og:type" content="website">
+<style>
+:root {
+  color-scheme: light;
+  --page:#f9f9f7; --surface:#ffffff; --surface-2:#f1f1ee;
+  --ink-1:#0b0b0b; --ink-2:#52514e; --ink-3:#898781;
+  --line:#e1e0d9; --line-2:#c9c8bf; --ring:rgba(11,11,11,0.10);
+  --accent:#2a4bd6; --accent-soft:#e8ecfb;
+  --open:#0a8f4a; --open-soft:#e3f5ea;
+  --soon:#c77d00; --soon-soft:#fff3dc;
+  --closed:#898781; --closed-soft:#eeeeea;
+  --check:#c2185b; --check-soft:#fde7ef;
+  --c-fellow:#2a4bd6; --c-env:#1b9a6a; --c-queens:#e07b1a; --c-emerg:#d13b3b;
+  --c-photo:#6a3fb5; --c-write:#c2185b; --c-women:#b5176e; --c-org:#4a6572;
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page:#0e0e0d; --surface:#1a1a19; --surface-2:#232321;
+  --ink-1:#f6f6f3; --ink-2:#c3c2b7; --ink-3:#8f8e87;
+  --line:#2c2c2a; --line-2:#3b3b38; --ring:rgba(255,255,255,0.12);
+  --accent:#7d93ec; --accent-soft:#1d2440;
+  --open:#3fcf84; --open-soft:#12301f;
+  --soon:#f0b14a; --soon-soft:#3a2a0e;
+  --closed:#8f8e87; --closed-soft:#262624;
+  --check:#f06292; --check-soft:#3b1626;
+  --c-fellow:#7d93ec; --c-env:#3fcf84; --c-queens:#f0a35a; --c-emerg:#f07070;
+  --c-photo:#a98bea; --c-write:#f06292; --c-women:#ea6fb6; --c-org:#8fa6b3;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --page:#0e0e0d; --surface:#1a1a19; --surface-2:#232321;
+    --ink-1:#f6f6f3; --ink-2:#c3c2b7; --ink-3:#8f8e87;
+    --line:#2c2c2a; --line-2:#3b3b38; --ring:rgba(255,255,255,0.12);
+    --accent:#7d93ec; --accent-soft:#1d2440;
+    --open:#3fcf84; --open-soft:#12301f;
+    --soon:#f0b14a; --soon-soft:#3a2a0e;
+    --closed:#8f8e87; --closed-soft:#262624;
+    --check:#f06292; --check-soft:#3b1626;
+    --c-fellow:#7d93ec; --c-env:#3fcf84; --c-queens:#f0a35a; --c-emerg:#f07070;
+    --c-photo:#a98bea; --c-write:#f06292; --c-women:#ea6fb6; --c-org:#8fa6b3;
+  }
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; background:var(--page); color:var(--ink-1);
+  font-family: system-ui, -apple-system, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  font-size:15px; line-height:1.6; word-break:keep-all; }
+a { color:var(--accent); text-decoration:none; }
+a:hover { text-decoration:underline; }
+.wrap { max-width:1120px; margin:0 auto; padding:20px 16px 90px; }
+
+/* header */
+header.top { display:flex; align-items:flex-start; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+.kicker { font-size:12.5px; color:var(--ink-3); letter-spacing:.04em; text-transform:uppercase; }
+h1 { font-size:28px; margin:4px 0 6px; letter-spacing:-0.015em; line-height:1.25; }
+.sub { color:var(--ink-2); font-size:14.5px; max-width:780px; margin:0; }
+.meta { display:flex; gap:8px; flex-wrap:wrap; margin-top:12px; }
+.chip { display:inline-flex; align-items:center; gap:6px; font-size:12.5px; color:var(--ink-2);
+  border:1px solid var(--line); border-radius:999px; padding:3px 11px; background:var(--surface); }
+.mode-btn { border:1px solid var(--line); background:var(--surface); color:var(--ink-2); border-radius:999px;
+  padding:6px 12px; font-size:12.5px; cursor:pointer; white-space:nowrap; }
+.mode-btn:hover { border-color:var(--line-2); color:var(--ink-1); }
+
+.notice { margin-top:18px; padding:12px 14px; border:1px solid var(--line); border-left:4px solid var(--soon);
+  background:var(--surface); border-radius:8px; font-size:13.5px; color:var(--ink-2); }
+.notice strong { color:var(--ink-1); }
+
+/* nav */
+nav.toc { position:sticky; top:0; z-index:5; margin:18px -16px 0; padding:8px 16px; background:var(--page);
+  border-bottom:1px solid var(--line); display:flex; gap:6px; overflow-x:auto; scrollbar-width:none; }
+nav.toc::-webkit-scrollbar { display:none; }
+nav.toc a { white-space:nowrap; font-size:13px; padding:6px 11px; border-radius:999px; color:var(--ink-2);
+  border:1px solid transparent; }
+nav.toc a:hover { background:var(--surface); border-color:var(--line); text-decoration:none; color:var(--ink-1); }
+
+section { margin-top:44px; }
+h2 { font-size:21px; margin:0 0 6px; letter-spacing:-0.01em; }
+h2 .en { font-weight:500; color:var(--ink-3); font-size:14px; margin-left:8px; }
+.lead { color:var(--ink-2); margin:0 0 16px; font-size:14.5px; max-width:780px; }
+
+/* status */
+.status { display:inline-flex; align-items:center; gap:5px; font-size:12px; font-weight:600; border-radius:999px; padding:2px 9px; }
+.status::before { content:""; width:7px; height:7px; border-radius:50%; background:currentColor; }
+.status.open { color:var(--open); background:var(--open-soft); }
+.status.soon { color:var(--soon); background:var(--soon-soft); }
+.status.closed { color:var(--closed); background:var(--closed-soft); }
+.status.check { color:var(--check); background:var(--check-soft); }
+.status.rolling { color:var(--open); background:var(--open-soft); }
+.est { font-size:11.5px; color:var(--ink-3); font-weight:500; }
+
+/* filters */
+.filters { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin:0 0 14px; }
+.filters .group { display:flex; gap:6px; flex-wrap:wrap; align-items:center; }
+.filters .label { font-size:12.5px; color:var(--ink-3); margin-right:2px; }
+.fbtn { border:1px solid var(--line); background:var(--surface); color:var(--ink-2); border-radius:999px;
+  padding:5px 11px; font-size:12.5px; cursor:pointer; }
+.fbtn[aria-pressed="true"] { background:var(--ink-1); color:var(--page); border-color:var(--ink-1); }
+
+/* summary table */
+.tablewrap { overflow-x:auto; border:1px solid var(--line); border-radius:10px; background:var(--surface); }
+table { border-collapse:collapse; width:100%; font-size:13.5px; min-width:760px; }
+th, td { text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top; }
+th { font-size:12px; color:var(--ink-3); font-weight:600; letter-spacing:.02em; background:var(--surface-2); position:sticky; top:0; }
+tbody tr:last-child td { border-bottom:none; }
+tbody tr:hover { background:var(--surface-2); }
+td .name { font-weight:600; color:var(--ink-1); }
+td .name small { display:block; font-weight:400; color:var(--ink-3); font-size:12px; }
+.dot { display:inline-block; width:9px; height:9px; border-radius:50%; margin-right:7px; vertical-align:1px; }
+
+/* timeline (gantt) */
+.gantt { border:1px solid var(--line); border-radius:10px; background:var(--surface); overflow-x:auto; }
+.gantt-inner { min-width:900px; }
+.g-head, .g-row { display:grid; grid-template-columns: 230px repeat(var(--months), 1fr); }
+.g-head { border-bottom:1px solid var(--line); background:var(--surface-2); position:sticky; top:0; }
+.g-head div { font-size:11.5px; color:var(--ink-3); padding:8px 6px; text-align:center; border-left:1px solid var(--line); }
+.g-head div:first-child { text-align:left; border-left:none; padding-left:12px; }
+.g-head div.y { font-weight:600; color:var(--ink-2); }
+.g-row { border-bottom:1px solid var(--line); min-height:64px; position:relative; }
+.g-row:last-child { border-bottom:none; }
+.g-label { padding:8px 12px; font-size:13px; font-weight:600; display:flex; flex-direction:column; justify-content:center; gap:2px; background:var(--surface); position:sticky; left:0; z-index:1; border-right:1px solid var(--line); }
+.g-label small { color:var(--ink-3); font-weight:400; font-size:11.5px; }
+.g-cell { border-left:1px solid var(--line); }
+.g-track { grid-column: 2 / -1; grid-row:1; position:relative; }
+.bar { position:absolute; top:8px; height:22px; border-radius:6px; font-size:11px; line-height:22px; padding:0 7px; color:#fff;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis; box-shadow:0 1px 0 rgba(0,0,0,.08); }
+.bar.est { background-image:repeating-linear-gradient(135deg, rgba(255,255,255,.25) 0 6px, transparent 6px 12px); opacity:.85; outline:1px dashed rgba(255,255,255,.7); outline-offset:-2px; }
+.mark { position:absolute; top:36px; width:0; height:0; border-left:7px solid transparent; border-right:7px solid transparent; border-bottom:12px solid var(--ink-2); transform:translateX(-7px); }
+.mark::after { content:attr(data-label); position:absolute; top:12px; left:-10px; font-size:10.5px; color:var(--ink-3); white-space:nowrap; }
+.today { position:absolute; top:0; bottom:0; width:2px; background:var(--check); z-index:2; }
+.g-row.first .today::after { content:"오늘"; position:absolute; bottom:2px; left:4px; font-size:10px; color:var(--check); font-weight:600; }
+.legend { display:flex; gap:14px; flex-wrap:wrap; font-size:12.5px; color:var(--ink-2); margin-top:10px; }
+.legend span { display:inline-flex; align-items:center; gap:6px; }
+.legend i { display:inline-block; width:22px; height:12px; border-radius:4px; background:var(--ink-3); }
+.legend i.est { background-image:repeating-linear-gradient(135deg, rgba(255,255,255,.35) 0 5px, transparent 5px 10px); outline:1px dashed rgba(255,255,255,.8); outline-offset:-2px; }
+.legend i.tri { width:0; height:0; border-radius:0; background:none; border-left:6px solid transparent; border-right:6px solid transparent; border-bottom:11px solid var(--ink-2); }
+
+/* month list */
+.months { display:grid; grid-template-columns:repeat(auto-fill, minmax(250px,1fr)); gap:10px; margin-top:16px; }
+.month { border:1px solid var(--line); border-radius:10px; background:var(--surface); padding:12px 14px; }
+.month h4 { margin:0 0 8px; font-size:14px; display:flex; justify-content:space-between; }
+.month h4 small { color:var(--ink-3); font-weight:400; }
+.month ul { margin:0; padding:0; list-style:none; font-size:13px; }
+.month li { padding:4px 0; border-top:1px dashed var(--line); display:flex; gap:8px; align-items:flex-start; }
+.month li:first-child { border-top:none; }
+.month li .d { color:var(--ink-3); font-variant-numeric:tabular-nums; min-width:46px; }
+.month li .t { color:var(--ink-1); }
+.month li .t small { color:var(--ink-3); }
+
+/* cards */
+.cards { display:grid; gap:18px; }
+.card { border:1px solid var(--line); border-radius:12px; background:var(--surface); overflow:hidden; border-top:4px solid var(--c); }
+.card.hidden { display:none; }
+.card-head { padding:18px 20px 12px; display:flex; flex-wrap:wrap; gap:10px 16px; justify-content:space-between; align-items:flex-start; }
+.card-head h3 { margin:0; font-size:19px; letter-spacing:-0.01em; }
+.card-head h3 small { display:block; font-size:13px; font-weight:400; color:var(--ink-3); margin-top:2px; }
+.card-head .amt { font-size:22px; font-weight:700; letter-spacing:-0.01em; text-align:right; }
+.card-head .amt small { display:block; font-size:12px; color:var(--ink-3); font-weight:400; }
+.tags { display:flex; gap:6px; flex-wrap:wrap; padding:0 20px 12px; }
+.tag { font-size:12px; color:var(--ink-2); background:var(--surface-2); border-radius:6px; padding:2px 8px; }
+.summary { padding:0 20px 14px; color:var(--ink-2); font-size:14px; }
+.grid3 { display:grid; grid-template-columns:repeat(3, 1fr); gap:0; border-top:1px solid var(--line); }
+.col { padding:16px 20px; border-left:1px solid var(--line); }
+.col:first-child { border-left:none; }
+.col h4 { margin:0 0 10px; font-size:13px; color:var(--ink-3); letter-spacing:.03em; text-transform:uppercase; display:flex; align-items:center; gap:6px; }
+.col h4 .n { display:inline-flex; width:18px; height:18px; border-radius:50%; background:var(--c); color:#fff; font-size:11px; align-items:center; justify-content:center; }
+.col ul { margin:0; padding:0; list-style:none; font-size:13.5px; }
+.col li { position:relative; padding:4px 0 4px 20px; }
+.col li::before { content:"✓"; position:absolute; left:0; top:4px; color:var(--c); font-weight:700; font-size:12px; }
+.col.docs li::before { content:"▢"; font-size:13px; top:3px; }
+.col li.no::before { content:"✕"; color:var(--ink-3); }
+.col li small { color:var(--ink-3); }
+.tl { list-style:none; margin:0; padding:0; font-size:13.5px; }
+.tl li { position:relative; padding:5px 0 5px 20px; }
+.tl li::before { content:""; position:absolute; left:4px; top:12px; width:8px; height:8px; border-radius:50%; background:var(--c); }
+.tl li.est::before { background:transparent; border:2px dashed var(--c); width:6px; height:6px; left:3px; }
+.tl li .when { font-weight:600; color:var(--ink-1); }
+.tl li .what { color:var(--ink-2); }
+.tl li .est-lbl { font-size:11px; color:var(--soon); font-weight:600; margin-left:4px; }
+.tl .sub-h { font-size:11.5px; color:var(--ink-3); margin:8px 0 2px; padding-left:0; text-transform:uppercase; letter-spacing:.03em; }
+.tl .sub-h::before { display:none; }
+.card-foot { border-top:1px solid var(--line); padding:12px 20px; display:flex; flex-wrap:wrap; gap:10px 18px; font-size:13px; align-items:center; background:var(--surface-2); }
+.card-foot .tip { color:var(--ink-2); flex:1 1 320px; }
+.card-foot .tip b { color:var(--ink-1); }
+.links a { margin-right:14px; white-space:nowrap; }
+
+/* small cards */
+.mini { display:grid; grid-template-columns:repeat(auto-fill, minmax(280px,1fr)); gap:12px; }
+.mini .box { border:1px solid var(--line); border-radius:10px; background:var(--surface); padding:14px 16px; }
+.mini h4 { margin:0 0 4px; font-size:15px; }
+.mini h4 small { display:block; color:var(--ink-3); font-weight:400; font-size:12px; }
+.mini p { margin:6px 0 0; font-size:13.5px; color:var(--ink-2); }
+.mini .amt { font-weight:700; color:var(--ink-1); }
+
+/* checklist */
+.check { display:grid; grid-template-columns:repeat(auto-fill, minmax(300px,1fr)); gap:12px; }
+.check .box { border:1px solid var(--line); border-radius:10px; background:var(--surface); padding:14px 16px; }
+.check h4 { margin:0 0 8px; font-size:14.5px; }
+.check ul { margin:0; padding:0; list-style:none; font-size:13.5px; }
+.check li { padding:4px 0; display:flex; gap:8px; align-items:flex-start; }
+.check li label { cursor:pointer; color:var(--ink-2); }
+.check input { margin-top:5px; accent-color:var(--accent); }
+
+/* glossary */
+dl.gloss { display:grid; grid-template-columns:repeat(auto-fill, minmax(300px,1fr)); gap:10px 24px; margin:0; }
+dl.gloss div { border-top:1px solid var(--line); padding:8px 0; }
+dt { font-weight:600; font-size:14px; }
+dt small { color:var(--ink-3); font-weight:400; margin-left:6px; }
+dd { margin:2px 0 0; color:var(--ink-2); font-size:13.5px; }
+
+footer { margin-top:50px; color:var(--ink-3); font-size:12.5px; border-top:1px solid var(--line); padding-top:14px; }
+footer ul { margin:6px 0 0; padding-left:18px; }
+
+@media (max-width: 860px) {
+  .grid3 { grid-template-columns:1fr; }
+  .col { border-left:none; border-top:1px solid var(--line); }
+  .col:first-child { border-top:none; }
+  h1 { font-size:23px; }
+  .card-head .amt { text-align:left; }
+}
+@media print {
+  nav.toc, .mode-btn, .filters, .today { display:none !important; }
+  body { font-size:12px; }
+  .card { break-inside:avoid; }
+  .gantt { overflow:visible; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <div>
+    <div class="kicker">New York Foundation for the Arts · 한국어 가이드</div>
+    <h1>NYFA 아티스트 펀드 가이드 2026–27</h1>
+    <p class="sub">뉴욕예술재단(NYFA)이 직접 운영·관리하는 아티스트 지원금, 펠로우십, 긴급지원 프로그램을 한국어로 번역하고, 프로그램별 <b>자격 요건 · 제출 서류 · 접수/통보 타임라인</b>을 정리했습니다. 뉴욕에서 활동하는 한국 예술가가 어떤 프로그램에 언제 무엇을 준비해야 하는지 한 페이지에서 확인할 수 있습니다.</p>
+    <div class="meta">
+      <span class="chip">기준일 2026년 10월 4일</span>
+      <span class="chip">공개 신청 프로그램 10개 · 초청 전형 3개 · 종료/휴지 2개</span>
+      <span class="chip">출처: nyfa.org 공식 안내 및 가이드라인 PDF</span>
+    </div>
+  </div>
+  <button class="mode-btn" id="modeBtn" type="button" aria-label="화면 모드 전환">🌙 다크 모드</button>
+</header>
+
+<div class="notice">
+  <strong>확인 안내.</strong> 마감일은 매년 비슷한 시기에 반복되지만 연도마다 며칠씩 달라집니다. 날짜 옆에 <span class="status soon">예상</span> 표시가 있는 항목은 직전 사이클을 바탕으로 추정한 것이니, 지원 전 반드시 <a href="https://www.nyfa.org/awards-grants/" target="_blank" rel="noopener">nyfa.org/awards-grants</a>와 신청 포털 <a href="https://apply.nyfa.org/submit" target="_blank" rel="noopener">apply.nyfa.org</a>에서 공식 공고를 확인하세요. 모든 마감은 <b>미 동부시간(ET) 오후 5시</b>, 접수 개시는 보통 <b>오전 10시 ET</b>입니다.
+</div>
+
+<nav class="toc" aria-label="목차">
+  <a href="#overview">한눈에 보기</a>
+  <a href="#timeline">타임라인</a>
+  <a href="#programs">프로그램 상세</a>
+  <a href="#invite">초청 전형</a>
+  <a href="#ended">종료·휴지</a>
+  <a href="#prep">공통 준비물</a>
+  <a href="#glossary">용어 설명</a>
+</nav>
+
+<!-- ============ OVERVIEW ============ -->
+<section id="overview">
+  <h2>한눈에 보기 <span class="en">Overview</span></h2>
+  <p class="lead">누가, 어디서, 얼마를 받을 수 있는지와 다음 마감일을 요약한 표입니다. 프로그램 이름을 누르면 상세 카드로 이동합니다.</p>
+  <div class="tablewrap">
+    <table id="overviewTable">
+      <thead>
+        <tr><th>프로그램</th><th>지원 금액</th><th>대상 · 지역</th><th>분야</th><th>다음 접수 / 마감</th><th>상태</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============ TIMELINE ============ -->
+<section id="timeline">
+  <h2>연간 타임라인 <span class="en">2026.10 – 2027.12</span></h2>
+  <p class="lead">막대는 접수 기간, 삼각형은 결과 통보 시점입니다. 빗금 막대는 직전 사이클 기준 예상 일정입니다. 긴급지원(라우션버그)은 약 2개월마다 새 사이클이 열리므로 확정된 사이클만 표시했습니다.</p>
+  <div class="gantt"><div class="gantt-inner" id="gantt"></div></div>
+  <div class="legend">
+    <span><i></i> 접수 기간(확정)</span>
+    <span><i class="est"></i> 접수 기간(예상)</span>
+    <span><i class="tri"></i> 결과 통보</span>
+    <span style="color:var(--check)">│ 오늘</span>
+  </div>
+  <h3 style="font-size:16px;margin:26px 0 4px">월별 체크포인트</h3>
+  <p class="lead" style="margin-bottom:10px">이번 달부터 15개월간 매달 챙겨야 할 일을 날짜순으로 정리했습니다.</p>
+  <div class="months" id="months"></div>
+</section>
+
+<!-- ============ PROGRAMS ============ -->
+<section id="programs">
+  <h2>프로그램 상세 <span class="en">Programs</span></h2>
+  <p class="lead">각 카드는 ① 자격 요건 ② 제출 서류 ③ 타임라인 순서로 정리했습니다. 필터로 본인에게 해당하는 프로그램만 볼 수 있습니다.</p>
+  <div class="filters" id="filters">
+    <div class="group"><span class="label">대상</span>
+      <button class="fbtn" data-f="who" data-v="all" aria-pressed="true">전체</button>
+      <button class="fbtn" data-f="who" data-v="individual" aria-pressed="false">개인 예술가</button>
+      <button class="fbtn" data-f="who" data-v="group" aria-pressed="false">단체·집단</button>
+    </div>
+    <div class="group"><span class="label">지역</span>
+      <button class="fbtn" data-f="where" data-v="all" aria-pressed="true">전체</button>
+      <button class="fbtn" data-f="where" data-v="nyc" aria-pressed="false">뉴욕시 거주</button>
+      <button class="fbtn" data-f="where" data-v="nys" aria-pressed="false">뉴욕주(시 외)</button>
+      <button class="fbtn" data-f="where" data-v="us" aria-pressed="false">미국 전역</button>
+    </div>
+    <div class="group"><span class="label">상태</span>
+      <button class="fbtn" data-f="status" data-v="all" aria-pressed="true">전체</button>
+      <button class="fbtn" data-f="status" data-v="open" aria-pressed="false">접수 중</button>
+      <button class="fbtn" data-f="status" data-v="soon" aria-pressed="false">접수 예정</button>
+    </div>
+  </div>
+  <div class="cards" id="cards"></div>
+</section>
+
+<!-- ============ INVITATION ============ -->
+<section id="invite">
+  <h2>초청 전형 <span class="en">By Invitation Only</span></h2>
+  <p class="lead">공개 모집 없이 NYFA와 후원 재단이 추천·초청으로 수상자를 정하는 프로그램입니다. 직접 지원할 수는 없지만, NYFA가 어떤 예술가를 지원하는지 참고할 수 있습니다.</p>
+  <div class="mini">
+    <div class="box">
+      <h4>머레이 라이크 저명 예술가상 <small>The Murray Reich Distinguished Artist Award</small></h4>
+      <p><span class="amt">연 1회 · 용도 제한 없는 현금 상금</span></p>
+      <p>오랜 창작 경력을 가진 중견·원로 시각예술가가 더 깊은 탐구나 새로운 실험을 이어갈 수 있도록 지원합니다. 바드 칼리지 교수였던 화가 머레이 라이크를 기리는 상으로, 2025년 수상자는 메리 러블레이스 오닐(Mary Lovelace O'Neal)입니다.</p>
+    </div>
+    <div class="box">
+      <h4>투모로우랜드 프로젝트 재단상 <small>Tomorrowland Projects Foundation Award</small></h4>
+      <p><span class="amt">프로젝트 지원 · 초청</span></p>
+      <p>여러 분야의 예술가가 팀으로 협업하거나, 예술가가 주도해 사회 전반의 이슈에 대한 인식을 넓히는 프로젝트를 지원합니다. 강한 미학과 사회적 관련성을 함께 갖춘 실험적 프로젝트를 찾습니다.</p>
+    </div>
+    <div class="box">
+      <h4>메르츠 길모어 재단 댄서상 <small>Mertz Gilmore Foundation Dancer Award</small></h4>
+      <p><span class="amt">연 $14,000 × 3년 = 총 $42,000</span></p>
+      <p>뉴욕의 댄서·안무가가 3년간 안정적으로 창작하고 네트워크와 운영 기반을 다질 수 있도록 하는 다년 지원금입니다. 첫 기수에는 7개 팀/개인이 선정되었습니다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ENDED ============ -->
+<section id="ended">
+  <h2>종료·휴지 프로그램 <span class="en">Concluded / Inactive</span></h2>
+  <p class="lead">NYFA 사이트의 지원금 이력(Grant History)에만 남아 있거나 최근 공모가 확인되지 않는 프로그램입니다. 검색 결과에서 자주 보이지만 현재는 지원할 수 없으니 혼동하지 마세요.</p>
+  <div class="mini">
+    <div class="box">
+      <h4>리차지 뉴 서리얼리스트 프라이즈 <small>The Recharge New Surrealist Prize (구 Recharge Foundation Fellowship for New Surrealist Art)</small></h4>
+      <p><span class="amt">$7,000 · 종료</span></p>
+      <p>뉴 서리얼리즘 화풍의 화가를 위한 상이었으며, 2023년 10월 31일에 시작된 2024 사이클이 마지막 공모였습니다.</p>
+    </div>
+    <div class="box">
+      <h4>캐나다 여성 예술가상 <small>The Canadian Women Artists' Award</small></h4>
+      <p><span class="amt">CA$5,000 · 최근 공모 미확인</span></p>
+      <p>뉴욕주에 거주하는 캐나다 시민 여성 예술가(과거 기준 만 21–35세, 학생 가능)에게 주던 상입니다. 2022–2023년 이후 새 공모가 확인되지 않아 재개 여부는 NYFA에 직접 확인해야 합니다. 일부 외부 사이트가 2026년 10월 31일을 마감으로 표기하지만 공식 공고는 찾지 못했습니다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PREP ============ -->
+<section id="prep">
+  <h2>공통 준비물 체크리스트 <span class="en">What to prepare in advance</span></h2>
+  <p class="lead">NYFA의 모든 공모는 Submittable 기반 포털(apply.nyfa.org)에서 온라인으로만 받습니다. 아래 항목을 미리 갖춰 두면 어떤 공모가 열려도 2주 안에 지원서를 완성할 수 있습니다. 체크 상태는 이 브라우저에만 저장됩니다.</p>
+  <div class="check" id="prepList">
+    <div class="box">
+      <h4>1. 계정과 신분</h4>
+      <ul>
+        <li><input type="checkbox" id="p1"><label for="p1">apply.nyfa.org(Submittable) 계정 생성, 이메일 알림 켜기</label></li>
+        <li><input type="checkbox" id="p2"><label for="p2">거주 증명: 뉴욕주 운전면허·ID, 임대계약서, 공과금 고지서 등 (주소·날짜가 보이는 것)</label></li>
+        <li><input type="checkbox" id="p3"><label for="p3">SSN 또는 ITIN(개인납세자번호) — 선정 시 W-9 제출에 필요</label></li>
+        <li><input type="checkbox" id="p4"><label for="p4">최근 2년 연방 세금신고서 사본(긴급지원은 소득 기준 확인용)</label></li>
+      </ul>
+    </div>
+    <div class="box">
+      <h4>2. 작품 자료</h4>
+      <ul>
+        <li><input type="checkbox" id="p5"><label for="p5">최근 5년 내 대표작 10점 고해상 이미지(작품당 파일 1개, 여러 작품 합치기 금지)</label></li>
+        <li><input type="checkbox" id="p6"><label for="p6">작품별 메타데이터: 제목 · 완성 연도 · 재료 · 크기 · 1문장 설명</label></li>
+        <li><input type="checkbox" id="p7"><label for="p7">영상·오디오: 비공개 링크(Vimeo 등) + 비밀번호, 심사 종료(보통 7–8월)까지 유지</label></li>
+        <li><input type="checkbox" id="p8"><label for="p8">글 분야: 20페이지 이내 PDF 발췌 + 표지 1장</label></li>
+      </ul>
+    </div>
+    <div class="box">
+      <h4>3. 글로 쓰는 자료</h4>
+      <ul>
+        <li><input type="checkbox" id="p9"><label for="p9">아티스트 스테이트먼트 250단어 버전(영문) — 제출한 작품과 연결되게</label></li>
+        <li><input type="checkbox" id="p10"><label for="p10">약력(Bio) 100단어 · 이력서(CV) 최신화 — 전시·공연·출판·수상 연도순</label></li>
+        <li><input type="checkbox" id="p11"><label for="p11">프로젝트 설명 250단어 템플릿: 무엇을, 왜, 누구와, 어디서, 언제</label></li>
+        <li><input type="checkbox" id="p12"><label for="p12">웹사이트·포트폴리오 링크 정리</label></li>
+      </ul>
+    </div>
+    <div class="box">
+      <h4>4. 프로젝트형 지원금용</h4>
+      <ul>
+        <li><input type="checkbox" id="p13"><label for="p13">예산표: 지출(아티스트 피, 장비, 장소, 홍보, 보험) / 수입(다른 지원금, 현물기부, 자비)</label></li>
+        <li><input type="checkbox" id="p14"><label for="p14">타임라인: 제작 → 발표 → 공공 참여 단계별 월 단위</label></li>
+        <li><input type="checkbox" id="p15"><label for="p15">참여 약정서·장소 허가서·추천서(선택 항목이지만 경쟁력에 도움)</label></li>
+        <li><input type="checkbox" id="p16"><label for="p16">과거 홍보물: 전시 브로슈어, 프로그램, 언론 기사 스캔</label></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GLOSSARY ============ -->
+<section id="glossary">
+  <h2>용어 설명 <span class="en">Glossary</span></h2>
+  <dl class="gloss">
+    <div><dt>Unrestricted cash grant <small>용도 제한 없는 현금 지원금</small></dt><dd>생활비, 재료비, 스튜디오 임대 등 어디에 써도 되는 지원금. 결과 보고 의무가 거의 없습니다. 미국에서는 과세 소득이므로 1099 양식을 받습니다.</dd></div>
+    <div><dt>Fellowship <small>펠로우십</small></dt><dd>특정 프로젝트가 아니라 예술가 개인의 성취를 인정해 주는 지원. NYSCA/NYFA 펠로우십은 작품 샘플의 질로만 심사합니다.</dd></div>
+    <div><dt>Work sample <small>작품 샘플</small></dt><dd>심사의 핵심 자료. 이미지·영상·오디오·원고 등 분야별 제한(개수·분량)이 있고, 메타데이터를 함께 입력합니다.</dd></div>
+    <div><dt>Artist statement <small>아티스트 스테이트먼트</small></dt><dd>작업의 주제·방법·관심사를 설명하는 짧은 글. NYFA는 보통 250단어 이내, 폼에 직접 입력합니다.</dd></div>
+    <div><dt>Support statement <small>지원 설명문</small></dt><dd>스테이트먼트 외에 폼에서 추가로 묻는 질문(이 상이 경력에 어떤 의미인지 등)에 대한 답변.</dd></div>
+    <div><dt>Degree-seeking program <small>학위 과정</small></dt><dd>학사·석사·박사 등 학위를 목표로 재학 중이면 대부분의 NYFA 공모에 지원할 수 없습니다. 비학위 수업은 무관합니다.</dd></div>
+    <div><dt>Originator of the work <small>작품의 원작자</small></dt><dd>작품을 만든 창작자(작가·안무가·감독). 배우·댄서·연주자처럼 작품을 해석·실연하는 예술가는 해당 분야에서 지원할 수 없습니다.</dd></div>
+    <div><dt>Tribal Nations <small>원주민 부족국가</small></dt><dd>뉴욕주 안에 있는 연방·주 인정 원주민 부족 영토. 뉴욕주 거주 요건에 포함됩니다.</dd></div>
+    <div><dt>Adjusted Gross Income (AGI) <small>조정총소득</small></dt><dd>연방 세금신고서(Form 1040)의 조정총소득. 긴급지원은 최근 2년 평균 AGI가 개인 $80,000 / 부부합산 $160,000 이하여야 합니다.</dd></div>
+    <div><dt>501(c)(3) determination letter <small>비영리 인정서</small></dt><dd>미 국세청(IRS)이 단체의 비영리 면세 지위를 인정한 공식 서한. 단체 대상 공모에서 필수 첨부입니다.</dd></div>
+    <div><dt>Fiscal sponsorship <small>재정 후원</small></dt><dd>비영리 단체가 개인 예술가의 프로젝트를 대신 받아 관리해 주는 제도. NYFA도 유료 재정후원 서비스를 운영하지만, 이 페이지의 지원금과는 별개입니다.</dd></div>
+    <div><dt>Panel review <small>동료 심사</small></dt><dd>해당 분야 예술가·전문가로 구성된 심사단이 익명으로 작품 샘플을 평가하는 방식. 지역·경력·배경의 다양성도 고려됩니다.</dd></div>
+    <div><dt>Public engagement component <small>공공 참여 요소</small></dt><dd>전시·공연·워크숍 등 일반 대중이 무료로 참여할 수 있는 발표. 환경예술 지원금(AWAW EAG)의 필수 조건입니다.</dd></div>
+    <div><dt>Cycle <small>사이클</small></dt><dd>한 번의 접수–심사–통보 회차. 긴급지원은 연중 여러 사이클(격월)로, 펠로우십은 연 1회로 운영됩니다.</dd></div>
+  </dl>
+</section>
+
+<footer>
+  <div>이 페이지는 NYFA 공식 사이트(nyfa.org)의 프로그램 안내, 각 프로그램 가이드라인 PDF, 신청 포털(apply.nyfa.org) 및 NYFA가 배포한 공고를 바탕으로 2026년 10월 4일에 정리했습니다. 비공식 번역이며 NYFA와 무관합니다. 금액·날짜·요건은 매 사이클 바뀔 수 있으므로 지원 전 원문을 확인하세요.</div>
+  <ul>
+    <li>전체 목록: <a href="https://www.nyfa.org/awards-grants/" target="_blank" rel="noopener">nyfa.org/awards-grants</a> · 초청 전형: <a href="https://www.nyfa.org/grant-by-invitation/" target="_blank" rel="noopener">nyfa.org/grant-by-invitation</a> · 지원금 이력: <a href="https://www.nyfa.org/grant-history/" target="_blank" rel="noopener">nyfa.org/grant-history</a></li>
+    <li>신청 포털: <a href="https://apply.nyfa.org/submit" target="_blank" rel="noopener">apply.nyfa.org/submit</a> · 문의: NYFA Grants 팀 (각 프로그램 페이지의 이메일 참고)</li>
+  </ul>
+</footer>
+
+</div>
+
+<script>
+/* ---------- data ---------- */
+const TODAY = new Date('2026-10-04T12:00:00');
+const RANGE_START = new Date('2026-10-01');
+const MONTHS = 15; // 2026-10 .. 2027-12
+
+const PROGRAMS = [
+{
+  id:'afp', color:'var(--c-fellow)',
+  name:'NYSCA/NYFA 아티스트 펠로우십', en:'NYSCA/NYFA Artist Fellowship',
+  amount:'$8,000', amountNote:'용도 제한 없음 · 분야별 복수 선정',
+  who:['individual'], where:['nyc','nys'],
+  whoLabel:'뉴욕주 거주 개인 예술가', fields:'2027년: 소설 · 민속/전통예술 · 다학제 · 회화 · 비디오/영화',
+  tags:['개인','뉴욕주 전역(NYC 포함)','연 1회','신청비 무료','15개 분야 3년 순환'],
+  summary:'뉴욕주 예술위원회(NYSCA)와 NYFA가 함께 주는 뉴욕주 대표 개인 펠로우십입니다. 프로젝트 제안이 아니라 지난 작업의 성취를 보고 선정하며, 15개 분야를 매년 5개씩 3년에 걸쳐 돌아가며 공모합니다. 2027 사이클은 소설(Fiction), 민속/전통예술(Folk/Traditional Arts), 다학제 작업(Interdisciplinary Work), 회화(Painting), 비디오/영화(Video/Film)이고, 2028 사이클은 건축/환경 디자인, 안무, 음악/사운드, 사진, 극작/시나리오 차례입니다.',
+  elig:[
+    '마감일 기준 만 25세 이상',
+    '뉴욕주 또는 뉴욕주 내 원주민 부족국가(Tribal Nation) 현 거주자로, 최근 2년 연속 거주 <small>(2027 사이클: 2025–2026년)</small>',
+    '학사·석사 등 학위 과정 재학생 불가',
+    '작품의 원작자여야 함 <small>(배우·댄서 등 해석 예술가는 불가)</small>',
+    '최근 5년 내(2022–2026) 어떤 분야든 NYSCA/NYFA 펠로우십 수상자는 불가',
+    '공동 지원 가능: 최대 3인(제출자 포함), 전원 자격 충족, 같은 해 개인으로 중복 지원 불가',
+    '한 사이클에 최대 2개 분야까지 지원 가능'
+  ],
+  docs:[
+    '온라인 신청서(apply.nyfa.org) — 연락처, 거주 정보, 인구통계 설문',
+    '작품 샘플(최근 5년 작품 권장) — 회화: 이미지 최대 10점(5점 이상 권장) · 소설: 원고 최대 20쪽 + 표지 1쪽 · 비디오/영화: 영상 1편 최대 20분(하이라이트 릴 불가) · 민속/전통예술·다학제: 이미지·오디오·영상 조합(분야 가이드라인 확인)',
+    '작품별 메타데이터: 제목, 완성일, 재료, 크기, 1문장 설명(설치·퍼포먼스 기록인지 등)',
+    '아티스트 스테이트먼트 최대 250단어 — 제출 작품과 연결된 주제·방법 소개',
+    '지원 설명문(Support Statements) — 폼의 텍스트박스에 직접 입력, 파일 업로드 불가',
+    '이력서는 PDF에 넣지 말고 폼의 해당 항목에 입력',
+    '영상 링크는 비밀번호와 함께 2027년 7월까지 접근 가능하게 유지',
+    '이전에 펠로우십을 받은 작품 샘플은 재제출 불가'
+  ],
+  timeline:[
+    {h:'2027 사이클(예상, 2026 사이클 일정 기준)'},
+    {when:'2026년 12월 초', what:'접수 개시 (2026 사이클은 12월 2일 10:00 ET)', est:true, date:'2026-12-01'},
+    {when:'2027년 1월 27일(수) 17:00 ET', what:'접수 마감 (외부 공고 기준, 공식 확정 확인 필요)', est:true, date:'2027-01-27'},
+    {when:'2027년 2–6월', what:'분야별 동료 심사(패널)', est:true},
+    {when:'2027년 7월경', what:'결과 통보 및 수상자 발표', est:true, date:'2027-07-15'},
+    {h:'참고: 2026 사이클(종료)'},
+    {when:'2025.12.02 – 2026.01.27', what:'접수 (공예/조각, 디지털/전자예술, 논픽션, 시, 판화/드로잉/북아트)'},
+    {when:'2026년 여름', what:'결과 통보 완료'}
+  ],
+  gantt:[{s:'2026-12-01', e:'2027-01-27', est:true, label:'2027 접수(예상)'}],
+  notify:[{d:'2027-07-15', est:true, label:'통보'}],
+  tip:'작품 샘플이 심사의 거의 전부입니다. 최근 5년 작품 중 한 가지 흐름이 분명히 보이도록 고르고, 스테이트먼트는 그 샘플들을 설명하는 데 집중하세요. 12월에 열리는 NYFA 정보 세션(온라인)에서 분야별 패널 피드백을 들을 수 있습니다.',
+  links:[['프로그램 안내','https://www.nyfa.org/awards-grants/nysca-nyfa-artist-fellowship/'],['신청 포털','https://apply.nyfa.org/submit']],
+  nextLabel:'2026.12 초 개시 → 2027.01.27 마감', nextEst:true
+},
+{
+  id:'awaw', color:'var(--c-env)',
+  name:'어노니머스 워즈 어 우먼 환경예술 지원금', en:'Anonymous Was A Woman Environmental Art Grants (AWAW EAG)',
+  amount:'최대 $20,000', amountNote:'2026년 총 $470,000 이상 배분',
+  who:['individual'], where:['nyc','nys','us'],
+  whoLabel:'미국 전역 여성 정체성 예술가(개인, 프로젝트 리드)', fields:'환경 주제 예술 프로젝트 · 전 장르',
+  tags:['개인(협업 가능)','미국 전역','프로젝트형','여성 정체성','연 1회'],
+  summary:'익명 기부로 시작된 Anonymous Was A Woman(AWAW) 프로그램과 NYFA가 함께 운영하는 환경예술 프로젝트 지원금입니다. 재생, 생태사회적 참여, 탈탄소화, 에코페미니즘, 기후변화, 시스템 복원, 종간 관계, 재활용·재사용, 청정에너지, 바이오플라스틱 등 환경 이슈에 실제로 개입하는 프로젝트를 찾습니다. 단순히 문제를 가리키는 데 그치지 않고 일정 규모로 행동을 이끌어내는 프로젝트가 유리합니다.',
+  elig:[
+    '여성 또는 여성(female)으로 정체화하는 사람 <small>(트랜스 여성, 출생 시 여성으로 지정된 다양한 성정체성 포함)</small>',
+    '마감일 기준 만 18세 이상',
+    '프로젝트 리드인 개인 예술가 <small>(단체는 지원자·리드가 될 수 없음, 협업 프로젝트는 환영)</small>',
+    '마감일 기준 미국 50개 주, 워싱턴 DC, 원주민 부족국가 또는 미국령 거주',
+    '지원 기간(2026.8–2027.8) 중 학위 과정 재학 불가',
+    '이전에 리드 지원자로 AWAW EAG를 받은 사람 불가',
+    '프로젝트가 이미 진행 중이어야 함 <small>(새로 시작하는 프로젝트 불가)</small>',
+    '프로젝트 또는 한 단계가 2027년 8월까지 완료되어야 함',
+    '지원 기간 내에 무료·일반 공개 공공 참여 행사 필수'
+  ],
+  docs:[
+    '프로젝트 설명 — 환경 이슈, 접근 방식, 기대 효과',
+    '작품 샘플 최대 6개: 제안 프로젝트의 진행 중 샘플 1–3개(필수) + 맥락을 보여주는 다른 작업 최대 3개(선택). 이미지·PDF 프레젠테이션·원고·오디오·짧은 영상 가능',
+    '작품별 설명·제목·날짜, 영상은 타임스탬프를 메타데이터에 기재',
+    '프로젝트 타임라인 최대 250단어 — 제작·발표·공공 참여 단계',
+    '프로젝트 예산 — 제공 템플릿 사용 또는 업로드(아티스트 피, 장비, 마케팅 등 지출과 수입)',
+    '선택: 약력/이력서, 협력자 참여 약정서, 장소 사용 허가서'
+  ],
+  timeline:[
+    {h:'2027 사이클(예상)'},
+    {when:'2027년 2월 중순', what:'접수 개시 (2026: 2월 10일, 2025: 2월경)', est:true, date:'2027-02-09'},
+    {when:'2027년 4월 초', what:'접수 마감 (2026: 4월 7일, 2025: 4월 15일)', est:true, date:'2027-04-06'},
+    {when:'2027년 8월', what:'결과 통보 · 지원 기간 시작(2027.8–2028.8)', est:true, date:'2027-08-15'},
+    {h:'참고: 2026 사이클(종료)'},
+    {when:'2026.02.10 10:00 ET', what:'접수 개시'},
+    {when:'2026.04.07 17:00 ET', what:'접수 마감'},
+    {when:'2026년 8월', what:'통보 · 지원 기간 2026.8–2027.8'}
+  ],
+  gantt:[{s:'2027-02-09', e:'2027-04-06', est:true, label:'2027 접수(예상)'}],
+  notify:[{d:'2027-08-15', est:true, label:'통보'}],
+  tip:'"이미 진행 중"이라는 조건이 핵심입니다. 리서치, 장소 섭외, 파트너 협의 등 시작된 단계가 있어야 하고, 진행 중 샘플이 최소 1개 필요합니다. 공공 참여 행사의 날짜·장소·무료 여부를 타임라인에 명확히 적으세요.',
+  links:[['프로그램 안내','https://www.nyfa.org/awards-grants/anonymous-was-a-woman-environmental-art-grants/'],['신청 포털','https://apply.nyfa.org/submit']],
+  nextLabel:'2027.02 중순 개시 → 2027.04 초 마감', nextEst:true
+},
+{
+  id:'qaf-new', color:'var(--c-queens)',
+  name:'퀸스 아츠 펀드: 신작 지원금', en:'Queens Arts Fund: New Work Grant',
+  amount:'$3,000 – $7,500', amountNote:'프로젝트 기반',
+  who:['individual','group'], where:['nyc'],
+  whoLabel:'퀸스 거주(또는 퀸스 스튜디오) 개인 예술가 · 예술가 집단', fields:'전 장르 · 2027년 내 발표하는 신작',
+  tags:['개인·집단','퀸스','프로젝트형','신진 예술가 환영'],
+  summary:'퀸스에서 활동하는 신진 개인 예술가와 예술가 집단이 신작을 만들도록 지원하는 프로젝트 지원금입니다. "신작"은 이전에 어떤 관객에게도 제작·발표된 적 없는 작품을 뜻하고, 2027년(1월 1일–12월 31일) 안에 퀸스 커뮤니티와 만나는 계획이 있어야 합니다. 뉴욕시 문화국(DCLA) 등 공공 기금으로 운영됩니다.',
+  elig:[
+    '2026년 12월 31일 기준 만 18세 이상',
+    '퀸스 거주자 또는 퀸스에 전일제 스튜디오 임대 계약이 있는 예술가 <small>(사서함 PO Box 주소 불가)</small>',
+    '신청서에 퀸스 주소 증명 제출',
+    '제안 프로젝트가 2027년 내 신작 창작·발표를 포함',
+    '집단·협업은 퀸스 기반 예술가 1인을 리드 지원자로 지정 — 리드가 개인 요건을 모두 충족하고 지원금을 수령·관리',
+    '모든 예술 분야 가능'
+  ],
+  docs:[
+    '리드 지원자 정보(이름·연락처) 및 퀸스 거주 증명',
+    '개인 또는 집단 여부, 집단명과 핵심 팀원 역할',
+    '아티스트 스테이트먼트 또는 집단 미션',
+    '프로젝트 제목, 설명(최대 250단어), 예술 분야',
+    '대상 관객과 커뮤니티 참여 계획, 발표 장소·일정',
+    '프로젝트 타임라인',
+    '프로젝트 예산 — 제공 템플릿: 지출(아티스트 피, 장비, 마케팅 등), 수입, 현물 기부',
+    '작품 샘플(이미지·영상·오디오·원고, 분야별 제한은 가이드라인 확인)',
+    '과거 홍보물 — 브로슈어, 프로그램, 언론 기사, 카탈로그, 웹 자료'
+  ],
+  timeline:[
+    {h:'2027 사이클(확정)'},
+    {when:'2026년 9월 22일(화) 10:00 ET', what:'접수 개시', date:'2026-09-22'},
+    {when:'2026년 11월 17일(화) 17:00 ET', what:'접수 마감', date:'2026-11-17'},
+    {when:'2026년 12월 – 2027년 3월', what:'동료 심사(패널) 평가'},
+    {when:'2027년 봄', what:'결과 통보', date:'2027-04-15', est:true},
+    {when:'2027.01.01 – 12.31', what:'프로젝트 수행 기간'}
+  ],
+  gantt:[{s:'2026-09-22', e:'2026-11-17', est:false, label:'2027 접수'}],
+  notify:[{d:'2027-04-15', est:true, label:'통보(봄)'}],
+  tip:'심사 기준은 "프로젝트를 실제로 완수할 수 있는가"입니다. 타임라인과 예산이 프로젝트 규모에 비해 현실적인지, 관객과 커뮤니티 참여 계획이 구체적인지가 점수를 좌우합니다. 요청액의 최소 50%는 보장되므로 필요한 금액을 솔직하게 적으세요.',
+  links:[['프로그램 안내','https://www.nyfa.org/awards-grants/queens-arts-fund-new-work-grant/'],['신청 포털','https://apply.nyfa.org/submit']],
+  nextLabel:'접수 중 → 2026.11.17 마감', nextEst:false
+},
+{
+  id:'qaf-access', color:'var(--c-queens)',
+  name:'퀸스 아츠 펀드: 예술 접근성 지원금', en:'Queens Arts Fund: Arts Access Grant',
+  amount:'$5,000 – $10,000', amountNote:'요청액의 50% 이상 보장',
+  who:['group'], where:['nyc'],
+  whoLabel:'퀸스 기반 소규모 비영리 단체 · 비법인 예술가 집단', fields:'퀸스 내 공공 예술·문화 프로그램',
+  tags:['단체·집단','퀸스','프로그램형','운영예산 $10만 미만'],
+  summary:'퀸스의 커뮤니티 기반 소규모 단체와 예술가 집단이 2027년에 퀸스 주민을 위한 공공 예술·문화 프로그램을 열도록 지원합니다. 신작 지원금이 "예술가의 창작"을 보는 반면, 이 지원금은 "커뮤니티가 예술에 접근하는 기회"를 봅니다.',
+  elig:[
+    '퀸스에 소재한 501(c)(3) 비영리 단체 <small>(IRS 비영리 인정서 필수)</small> 또는 비법인 예술가 집단',
+    '단체·집단이 1년 이상 존속',
+    '최근 3년 중 2년 이상 운영 예산 $100,000 미만',
+    '리드 지원자가 2026년 12월 31일 기준 만 18세 이상',
+    '신청서에 퀸스 주소 증명 제출',
+    '다른 501(c)(3)의 재정 후원을 받는 단체나 비예술 단체 내부 프로그램은 가이드라인에서 자격 확인'
+  ],
+  docs:[
+    '501(c)(3) IRS 결정서 사본(비영리 단체)',
+    '퀸스 주소 증명',
+    '단체·집단 정보: 미션, 연혁, 핵심 인력 역할',
+    '프로그램 설명 — 내용, 대상 커뮤니티, 장소, 접근성(무료·저가 여부, 언어, 장애 접근)',
+    '프로그램 타임라인(2027년 내)',
+    '예산 — 제공 템플릿(지출·수입·현물기부), 최근 운영 예산 자료',
+    '프로그램·작품 샘플 및 과거 활동 자료(사진, 홍보물, 언론)',
+    '선택 첨부·보충 자료'
+  ],
+  timeline:[
+    {h:'2027 사이클(확정)'},
+    {when:'2026년 9월 22일(화) 10:00 ET', what:'접수 개시', date:'2026-09-22'},
+    {when:'2026년 11월 17일(화) 17:00 ET', what:'접수 마감', date:'2026-11-17'},
+    {when:'2027년 봄', what:'결과 통보', date:'2027-04-15', est:true},
+    {when:'2027.01.01 – 12.31', what:'프로그램 수행 기간'}
+  ],
+  gantt:[{s:'2026-09-22', e:'2026-11-17', est:false, label:'2027 접수'}],
+  notify:[{d:'2027-04-15', est:true, label:'통보(봄)'}],
+  tip:'비영리 서류(501(c)(3) 결정서)와 최근 2–3년 운영 예산 자료를 먼저 갖추세요. 집단으로 지원하면 법인 서류는 필요 없지만 1년 이상 활동했음을 보여줄 기록(행사 사진, 홍보물)이 필요합니다.',
+  links:[['프로그램 안내','https://www.nyfa.org/awards-grants/queens-arts-fund-arts-access-grant/'],['신청 포털','https://apply.nyfa.org/submit']],
+  nextLabel:'접수 중 → 2026.11.17 마감', nextEst:false
+},
+{
+  id:'nycwf', color:'var(--c-women)',
+  name:'뉴욕시 여성 미디어·음악·연극 펀드', en:"NYC Women's Fund for Media, Music and Theatre",
+  amount:'최대 $50,000', amountNote:'부문별 $20,000 – $50,000',
+  who:['individual','group'], where:['nyc'],
+  whoLabel:'뉴욕시 5개 보로 거주 지원자(개인·단체)', fields:'영화 · 웹시리즈 · 음악 · 연극',
+  tags:['개인·단체','뉴욕시','프로젝트형','여성 관점 프로젝트','확인 필요'],
+  summary:'뉴욕시 미디어엔터테인먼트국(MOME)이 기금을 대고 NYFA가 운영하는 펀드로, 여성이 만들거나 여성을 위한·여성에 관한 영화·웹시리즈·음악·연극 프로젝트의 완성과 발표를 지원합니다. 부문별 상한은 장편 극영화 $50,000 · 단편 극영화 $25,000 · 장편 다큐멘터리 $50,000 · 단편 다큐멘터리 $25,000 · 웹시리즈 $20,000 · 음악(전 부문) $20,000 · 연극 제작 $50,000입니다. 2026년 공모가 열렸는지는 외부 공고(마감 11월 2일)만 확인되어, 반드시 공식 페이지에서 확인하세요.',
+  elig:[
+    '지원자(또는 지원금 수령인)가 뉴욕시 5개 보로 중 한 곳에 거주',
+    '프로젝트가 다음 중 하나 이상을 충족: 뚜렷한 여성 정체성 관점 · 의미 있는 여성 프로듀서 크레딧 · 의미 있는 여성 작가 크레딧 · 여성 주인공',
+    '영화·웹시리즈: 본촬영(principal photography)이 끝났고, 프로그램 기한 내 최종 편집·배급 일정을 제시할 수 있어야 함',
+    '연극: 유급 출연진·스태프로 뉴욕시에서 최소 5회 공연하는 전문 제작이어야 하며, 리허설과 공연 모두 뉴욕시에서 진행',
+    '음악: 뉴욕시에서 제작·발표하는 음반·뮤직비디오·라이브 프로젝트(세부 요건은 가이드라인 확인)'
+  ],
+  docs:[
+    '프로젝트 설명(시놉시스·컨셉, 여성 관점이 어떻게 반영되는지)',
+    '예산 — Submittable 템플릿에 직접 입력 또는 업로드: 아티스트 피, 장비 대여, 마케팅 등 지출 총액과 프로젝트 총 수입',
+    '지원자 및 핵심 아티스트 약력',
+    '작품 샘플 — 영화: 해당 프로젝트의 짧은 클립(최대 5분) 1개 + 전체 흐름을 보여주는 긴 샘플(최대 40분) 1개 · 음악·연극: 녹음·영상·대본 등 부문별 요건',
+    '완성·배급(또는 공연) 타임라인',
+    '거주 증명'
+  ],
+  timeline:[
+    {h:'2026–27 사이클(외부 공고 기준, 확인 필요)'},
+    {when:'2026년 9월경', what:'접수 개시 추정', est:true, date:'2026-09-15'},
+    {when:'2026년 11월 2일(월)', what:'접수 마감 (외부 공고 기준)', est:true, date:'2026-11-02'},
+    {when:'2027년 봄', what:'결과 통보 추정 (과거 사이클은 이듬해 3–4월)', est:true, date:'2027-04-01'},
+    {h:'참고: 과거 사이클'},
+    {when:'2023.08 – 2023.11.01', what:'5차 공모 접수 → 2024년 봄 수상자 발표'}
+  ],
+  gantt:[{s:'2026-09-15', e:'2026-11-02', est:true, label:'접수(확인 필요)'}],
+  notify:[{d:'2027-04-01', est:true, label:'통보(추정)'}],
+  tip:'영화 부문은 "촬영이 끝난 프로젝트의 후반작업·배급" 지원이라는 점이 특징입니다. 개발 단계 프로젝트는 대상이 아니니, 촬영 완료 증빙(러프컷 샘플)과 완성 일정이 설득력 있어야 합니다.',
+  links:[['프로그램 안내','https://www.nyfa.org/nycwomensfund'],['MOME 안내','https://www.nyc.gov/site/mome/']],
+  nextLabel:'2026.11.02 마감(외부 공고, 확인 필요)', nextEst:true, check:true
+},
+{
+  id:'rmeg', color:'var(--c-emerg)',
+  name:'라우션버그 의료 긴급 지원금', en:'Rauschenberg Medical Emergency Grants (RMEG)',
+  amount:'최대 $5,000', amountNote:'1회성 · 사이클당 약 $138,000 배분',
+  who:['individual'], where:['nyc','nys','us'],
+  whoLabel:'미국 전역 시각·디지털·영상·안무 예술가', fields:'시각예술 · 디지털/전자예술 · 비디오/영화 · 안무',
+  tags:['개인','미국 전역','긴급지원','격월 사이클','소득 기준'],
+  summary:'로버트 라우션버그 재단과 NYFA가 함께 운영하는 전국 긴급지원입니다. 최근 6개월 안에 겪은 예기치 못한 의료·치과·정신건강 응급 상황으로 인한 비용을 최대 $5,000까지 1회 지원합니다. 약 2개월마다 새 사이클이 열리고, 사이클마다 "이 날짜 이후 발생한 응급"만 받습니다.',
+  elig:[
+    '시각예술, 디지털/전자예술, 비디오/영화, 안무 중 한 분야에서 원작을 만드는 생성 예술가',
+    '사이클 마감일 기준 만 21세 이상',
+    '미국 50개 주, 워싱턴 DC, 원주민 부족국가 또는 미국령 거주',
+    '최근 5년 이상 지속적·최근의 예술 활동 증명',
+    '조정총소득(AGI) 개인 $80,000 이하 또는 부부합산 $160,000 이하 <small>(최근 2개 연방 세금신고 평균)</small>',
+    '최근 5년 내 라우션버그 의료·댄서 긴급지원 수혜자 불가',
+    '응급 상황이 해당 사이클이 정한 날짜 이후에 발생 <small>(예: 36차는 2025.10.01 이후, 37차는 2025.12.01 이후)</small>'
+  ],
+  docs:[
+    '연락처, 예술 분야, 웹사이트',
+    '이력서/약력/CV — 최근 5년 이상 지속적 활동이 보이도록',
+    '응급 상황 설명 — 발생 시점, 경과, 창작 활동에 미친 영향',
+    '진단·상태 확인 서류 — 의료 제공자의 공식 레터헤드 문서',
+    '비용 증빙 — 청구서·명세서(진료일, 서비스 종류, 제공자명, 납부/미납 금액 포함)',
+    '보험 적용 추정서 — 보험이 얼마를 내고 본인 부담이 얼마인지',
+    '향후 치료 비용 요청 시 제공자의 레터헤드 편지 또는 이메일',
+    '증빙이 아직 없으면 본인 추정 비용 제출 가능',
+    '소득 정보 — 선정 시 최근 2년 연방 세금신고서, W-9(SSN/ITIN/EIN) 제출',
+    '선정 후 지원받은 모든 비용의 납부 영수증 제출 의무'
+  ],
+  timeline:[
+    {h:'2026–27 사이클(확정)'},
+    {when:'39차: 2026.10.20(화) 10:00 – 11.17(화) 17:00 ET', what:'접수 → 12월 23일 통보', date:'2026-11-17'},
+    {when:'40차: 2026.12.15(화) 10:00 – 2027.01.12(화) 17:00 ET', what:'접수 → 2027년 3월 8일 통보', date:'2027-01-12'},
+    {when:'2027년 2월 이후', what:'약 2개월 간격으로 41차, 42차… 계속 (nyfa.org/rmeg에서 공지)', est:true},
+    {h:'참고: 2026년 지난 사이클'},
+    {when:'36차: 04.14 – 05.12', what:'2025.10.01 이후 응급 · 6월 29일 통보'},
+    {when:'37차: 06.16 – 07.14', what:'2025.12.01 이후 응급 · 9월 7일 통보'},
+    {when:'38차: 08.18 – 09.15', what:'11월 9일 통보'}
+  ],
+  gantt:[
+    {s:'2026-10-20', e:'2026-11-17', est:false, label:'39차'},
+    {s:'2026-12-15', e:'2027-01-12', est:false, label:'40차'},
+    {s:'2027-02-16', e:'2027-03-16', est:true, label:'41차(예상)'},
+    {s:'2027-04-13', e:'2027-05-11', est:true, label:'42차(예상)'},
+    {s:'2027-06-15', e:'2027-07-13', est:true, label:'43차(예상)'},
+    {s:'2027-08-17', e:'2027-09-14', est:true, label:'44차(예상)'},
+    {s:'2027-10-19', e:'2027-11-16', est:true, label:'45차(예상)'}
+  ],
+  notify:[{d:'2026-12-23', est:false, label:'39차'},{d:'2027-03-08', est:false, label:'40차'}],
+  tip:'응급 발생 후 6개월 안에 지원해야 하므로 미루지 마세요. 접수 기간이 4주로 짧으니 레터헤드 진단서와 청구서를 먼저 모으고, 소득 요건(AGI)을 세금신고서로 확인해 두세요. 심사는 재정적 필요와 예술 활동의 지속성을 함께 봅니다.',
+  links:[['프로그램 안내','https://www.nyfa.org/awards-grants/rauschenberg-medical-emergency-grants/'],['신청 포털','https://apply.nyfa.org/submit']],
+  nextLabel:'39차 2026.10.20 개시 → 11.17 마감', nextEst:false
+},
+{
+  id:'rdeg', color:'var(--c-emerg)',
+  name:'라우션버그 댄서 긴급 지원금', en:'Rauschenberg Dancer Emergency Grants (RDEG)',
+  amount:'최대 $3,000', amountNote:'1회성 · 생활 필수 비용',
+  who:['individual'], where:['nyc','nys','us'],
+  whoLabel:'미국 전역 전문 댄서', fields:'무용(라이브 공연)',
+  tags:['개인','미국 전역','긴급지원','격월 사이클','소득 기준'],
+  summary:'본인이 통제할 수 없는 사정(공연 취소, 부상, 단체 해산 등)으로 최근 유급 라이브 공연 일을 잃거나 구하지 못해 심각한 재정 위기에 놓인 전문 댄서에게 집세·식비·의료비 등 필수 비용을 최대 $3,000까지 1회 지원합니다. 접수 중인 사이클이 끝나면 약 한 달 뒤 다음 사이클이 열립니다.',
+  elig:[
+    '사이클 마감일 기준 만 21세 이상',
+    '미국 50개 주, 워싱턴 DC, 원주민 부족국가 또는 미국령 거주',
+    '5년 이상 유급 라이브 무용 공연 경력, 2022년 이후 매년 최소 1회 이상 해당 공연',
+    '인정되지 않는 경력: 교육·학술 공연, 소셜 댄스, 경연, 클럽, 이그조틱 댄스, 광고·산업 행사, 개인 웹사이트·SNS에만 공개한 온라인 공연',
+    '조정총소득(AGI) 개인 $80,000 이하 또는 부부합산 $160,000 이하 <small>(최근 2개 연방 세금신고 평균)</small>',
+    '최근 5년 내 라우션버그 의료·댄서 긴급지원 수혜자 불가'
+  ],
+  docs:[
+    '개인 정보 및 연락처',
+    '재정 응급 상황의 상세 설명 — 무엇이, 언제, 왜 일어났는지',
+    '라이브 공연 일의 상실 또는 부재에 대한 설명',
+    '요청하는 필수 지출의 항목별 목록(집세, 공과금, 식비, 의료비 등)',
+    '소득 요약',
+    '재정 안정을 위해 취하고 있는 조치 설명',
+    '이력서/CV — 5년 이상 지속적 전문 무용 활동(단체명, 공연명, 장소, 연도)',
+    '선정 시 최근 2년 연방 세금신고서, W-9 제출'
+  ],
+  timeline:[
+    {h:'2026–27 사이클(확정)'},
+    {when:'26차: 2026.09.08 – 10.06(화) 17:00 ET', what:'접수 → 11월 20일 통보', date:'2026-10-06'},
+    {when:'27차: 2026.11.10(화) 10:00 – 12.08(화) 17:00 ET', what:'접수 → 2027년 1월 22일 통보', date:'2026-12-08'},
+    {when:'28차: 2027.01.12(화) 10:00 – 02.02(화) 17:00 ET', what:'접수 → 2027년 3월 19일 통보', date:'2027-02-02'},
+    {when:'2027년 3월 이후', what:'격월로 29차, 30차… 계속 (nyfa.org/rdeg에서 공지)', est:true}
+  ],
+  gantt:[
+    {s:'2026-09-08', e:'2026-10-06', est:false, label:'26차'},
+    {s:'2026-11-10', e:'2026-12-08', est:false, label:'27차'},
+    {s:'2027-01-12', e:'2027-02-02', est:false, label:'28차'},
+    {s:'2027-03-09', e:'2027-04-06', est:true, label:'29차(예상)'},
+    {s:'2027-05-11', e:'2027-06-08', est:true, label:'30차(예상)'},
+    {s:'2027-07-13', e:'2027-08-10', est:true, label:'31차(예상)'},
+    {s:'2027-09-07', e:'2027-10-05', est:true, label:'32차(예상)'},
+    {s:'2027-11-09', e:'2027-12-07', est:true, label:'33차(예상)'}
+  ],
+  notify:[{d:'2026-11-20', est:false, label:'26차'},{d:'2027-01-22', est:false, label:'27차'},{d:'2027-03-19', est:false, label:'28차'}],
+  tip:'공연 경력은 "유급 라이브 공연"만 인정되므로 CV에 단체·작품·장소·연도와 보수 여부가 드러나게 쓰세요. 지출 목록은 영수증·고지서 금액과 맞추고, 앞으로의 안정화 계획(다른 수입, 복귀 일정)을 구체적으로 적으면 설득력이 높아집니다.',
+  links:[['프로그램 안내','https://www.nyfa.org/awards-grants/rauschenberg-dancer-emergency-grants/'],['신청 포털','https://apply.nyfa.org/submit']],
+  nextLabel:'27차 2026.11.10 개시 → 12.08 마감', nextEst:false
+},
+{
+  id:'jgs', color:'var(--c-photo)',
+  name:'JGS 사진 펠로우십', en:'The JGS Fellowship for Photography',
+  amount:'$8,000', amountNote:'5명 선정 · 용도 제한 없음',
+  who:['individual'], where:['nys'],
+  whoLabel:'뉴욕시 외 뉴욕주 거주 사진 예술가', fields:'사진 · 광학 기반 · 대안 프로세스',
+  tags:['개인','뉴욕주(NYC 제외)','연 1회','사진 전문'],
+  summary:'Joy of Giving Something(JGS) 재단 후원으로 뉴욕시 바깥 뉴욕주 지역에서 활동하는 사진 예술가 5명에게 각 $8,000을 줍니다. 전통·실험 사진, 빛을 매체로 하는 작업, 대안 인화 프로세스 등 사진 기법이 중심인 모든 작업이 대상입니다. 뉴욕시 거주자는 지원할 수 없습니다.',
+  elig:[
+    '마감일 기준 만 25세 이상',
+    '뉴욕주 다음 지역 중 한 곳에서 12개월 이상 전일제 거주: 서부 뉴욕, 핑거레이크스, 서던티어, 중부 뉴욕, 노스컨트리, 모호크밸리, 캐피털 디스트릭트, 허드슨밸리, 롱아일랜드',
+    '뉴욕시 5개 보로 거주자 불가',
+    '학사·석사 등 학위 과정 재학생 불가',
+    '사진 또는 사진 기법이 핵심인 작업'
+  ],
+  docs:[
+    '온라인 신청서(연락처·거주 정보)',
+    '작품 샘플 — 작품당 파일 1개(여러 작품을 한 파일에 합치지 말 것), 개수 제한은 가이드라인 확인(펠로우십 표준은 최대 10점)',
+    '작품별 메타데이터: 제목, 완성일, 재료, 크기, 1문장 설명(설치 기록 여부 등)',
+    '아티스트 스테이트먼트 및 지원 설명문 — 폼 텍스트박스에 직접 입력(워드·구글독스에서 작성 후 붙여넣기 권장)',
+    '이력 정보(폼 입력)',
+    '거주 지역 증명'
+  ],
+  timeline:[
+    {h:'2027 사이클(예상)'},
+    {when:'2027년 3월 하순', what:'접수 개시 추정', est:true, date:'2027-03-23'},
+    {when:'2027년 5월 중순', what:'접수 마감 (2026: 5월 19일, 2024: 5월 21일)', est:true, date:'2027-05-18'},
+    {when:'2027년 가을', what:'결과 통보', est:true, date:'2027-10-01'},
+    {h:'참고: 2026 사이클(종료)'},
+    {when:'2026.05.19(화) 17:00 ET', what:'접수 마감'},
+    {when:'2026년 가을', what:'결과 통보'}
+  ],
+  gantt:[{s:'2027-03-23', e:'2027-05-18', est:true, label:'2027 접수(예상)'}],
+  notify:[{d:'2027-10-01', est:true, label:'통보(가을)'}],
+  tip:'거주 요건이 가장 까다롭습니다. 뉴욕시 외 지역 거주 12개월을 증명할 서류를 미리 확보하세요. 심사는 작품 샘플이 중심이며, 스테이트먼트는 샘플과 함께 읽혔을 때 작업의 방향이 선명하게 보이도록 쓰는 것이 좋습니다.',
+  links:[['프로그램 안내','https://www.nyfa.org/awards-grants/the-jgs-fellowship-for-photography/'],['신청 포털','https://apply.nyfa.org/submit']],
+  nextLabel:'2027.03 하순 개시 → 2027.05 중순 마감', nextEst:true
+},
+{
+  id:'hudak', color:'var(--c-write)',
+  name:'라이언 후닥 LGBTQ+ 극작 상', en:'The Ryan Hudak LGBTQ+ Dramatic Writing Award',
+  amount:'$8,000', amountNote:'1명 선정 · 용도 제한 없음',
+  who:['individual'], where:['nyc','nys'],
+  whoLabel:'뉴욕주(NYC 포함) 거주 LGBTQ+ 극작가·시나리오 작가', fields:'희곡 · 시나리오 · TV대본 · 리브레토 · 오디오드라마 등',
+  tags:['개인','뉴욕주 전역(NYC 포함)','연 1회','LGBTQ+'],
+  summary:'NYFA 직원이자 게이 극작가·연출가·영화감독이었던 라이언 후닥을 기리는 상으로, LGBTQ+로 정체화하는 뉴욕주 극작가 또는 시나리오 작가 1명에게 $8,000을 줍니다. 무대극, 영화·TV 대본, 리브레토, 라디오극, 오디오드라마, 인형극, 실험 웹시리즈까지 드라마 글쓰기 전반이 대상입니다.',
+  elig:[
+    '활동 중인 극작가 또는 시나리오 작가',
+    'LGBTQ+로 스스로 정체화',
+    '마감일 기준 뉴욕주 12개월 이상 전일제 거주 <small>(뉴욕시 5개 보로 포함)</small>',
+    '마감일 기준 만 25세 이상',
+    '학위 과정 재학생 불가',
+    '이전 라이언 후닥 상 수상자 불가 <small>(다른 NYFA 지원금 수혜자는 가능)</small>',
+    '작품의 원작자여야 하며, 공동 창작은 불가'
+  ],
+  docs:[
+    '작품 샘플 PDF 1개 — 최대 20쪽 + 표지 1쪽(총 21쪽), 최근 5년 내 작품',
+    '아티스트 스테이트먼트 — 예술적 비전, 동기, 창작 과정',
+    '이 상이 작업과 경력에 어떻게 기여할지에 대한 설명',
+    '이력 정보(폼 입력)',
+    '거주 증명'
+  ],
+  timeline:[
+    {h:'2027 사이클(예상)'},
+    {when:'2027년 4월 중순', what:'접수 개시 (2026: 4월)', est:true, date:'2027-04-13'},
+    {when:'2027년 6월 중순', what:'접수 마감 (2026: 6월 16일)', est:true, date:'2027-06-15'},
+    {when:'2027년 가을', what:'결과 통보', est:true, date:'2027-10-01'},
+    {h:'참고: 2026 사이클(종료)'},
+    {when:'2026.06.16(화) 17:00 ET', what:'접수 마감'},
+    {when:'2026년 가을', what:'결과 통보'}
+  ],
+  gantt:[{s:'2027-04-13', e:'2027-06-15', est:true, label:'2027 접수(예상)'}],
+  notify:[{d:'2027-10-01', est:true, label:'통보(가을)'}],
+  tip:'심사 기준은 글의 질, 주제의 깊이, 스토리텔링의 혁신성입니다. 20쪽 안에 인물과 극적 긴장이 드러나는 연속 장면을 고르고, 표지에는 작품 전체의 짧은 시놉시스와 발췌 위치를 적어 맥락을 주세요.',
+  links:[['프로그램 안내','https://www.nyfa.org/awards-grants/the-ryan-hudak-lgbtq-dramatic-writing-award/'],['신청 포털','https://apply.nyfa.org/submit']],
+  nextLabel:'2027.04 중순 개시 → 2027.06 중순 마감', nextEst:true
+},
+{
+  id:'rfg', color:'var(--c-org)',
+  name:'NYSCA 준비금 지원금', en:'NYSCA Reserve Fund Grants (RFG)',
+  amount:'최대 $50,000', amountNote:'운영예산 규모별 $20,000 – $50,000',
+  who:['group'], where:['nyc','nys'],
+  whoLabel:'뉴욕주 소규모·중규모 비영리 예술단체', fields:'단체 운영 준비금(Reserve Fund) 조성',
+  tags:['단체','뉴욕주 전역','1회성','NYSCA 수혜 단체'],
+  summary:'뉴욕주 예술위원회(NYSCA)와 NYFA가 뉴욕주 비영리 예술·문화 단체가 재정 안정을 위한 준비금(reserve fund)을 새로 만들거나 키우도록 지원합니다. 운영 예산 $15만–$50만 단체는 최대 $20,000, $50만–$100만은 최대 $35,000, $100만–$300만은 최대 $50,000이며, 2026년에는 총 $1,760,000을 배분했습니다. 단체당 한 번만 받을 수 있습니다.',
+  elig:[
+    '예술·문화 지원이 주요 미션인 501(c)(3) 비영리 단체로, 뉴욕주에 법인 등록 또는 사업 등록되어 있고 뉴욕주에 소재',
+    '현재 운영 예산 $150,000 – $3,000,000',
+    '최근 3개 회계연도(FY24–FY26) 중 NYSCA 직접 지원을 1회 이상 받은 단체',
+    '과거 NYSCA 준비금 지원금을 받은 단체 불가(1회성)',
+    '다른 501(c)(3)의 재정 후원을 받는 단체, 비예술 단체에 속한 프로그램 불가'
+  ],
+  docs:[
+    '단체 기본 정보 및 501(c)(3) 증빙',
+    'NYSCA 지원 이력(FY24–FY26)',
+    '최근 재무제표·운영 예산 자료',
+    '준비금 정책 또는 조성·운용 계획',
+    '이사회 승인 등 거버넌스 자료(가이드라인 확인)',
+    'NYFA 정보 세션(신청 개요) 참석 권장'
+  ],
+  timeline:[
+    {h:'2027 사이클(미정 · 2026 일정 기준 예상)'},
+    {when:'2027년 3월 초', what:'접수 개시 추정 (2026: 3월 10일)', est:true, date:'2027-03-09'},
+    {when:'2027년 5월 초', what:'접수 마감 추정 (2026: 5월 5일)', est:true, date:'2027-05-04'},
+    {when:'2027년 가을', what:'결과 통보 추정', est:true, date:'2027-10-01'},
+    {h:'참고: 2026 사이클(종료)'},
+    {when:'2026.03.10 10:00 – 05.05 17:00 ET', what:'접수'},
+    {when:'2026년 가을', what:'결과 통보'}
+  ],
+  gantt:[{s:'2027-03-09', e:'2027-05-04', est:true, label:'2027 접수(미정·예상)'}],
+  notify:[{d:'2027-10-01', est:true, label:'통보(추정)'}],
+  tip:'2027년 공모가 다시 열릴지는 NYSCA 예산에 따라 달라집니다. 대상 단체라면 NYFA 뉴스레터를 구독하고 1–2월에 공지를 확인하세요. 준비금 정책 문서를 이사회에서 미리 승인해 두면 신청이 수월합니다.',
+  links:[['프로그램 안내','https://www.nyfa.org/awards-grants/nysca-reserve-fund-grants/'],['NYSCA','https://arts.ny.gov/']],
+  nextLabel:'2027.03 초 개시 → 2027.05 초 마감(미정)', nextEst:true
+}
+];
+
+/* ---------- helpers ---------- */
+const fmt = d => { const x = new Date(d); return `${x.getFullYear()}.${String(x.getMonth()+1).padStart(2,'0')}.${String(x.getDate()).padStart(2,'0')}`; };
+const dayDiff = (a,b) => Math.round((new Date(b) - new Date(a)) / 86400000);
+const monthIndex = d => { const x = new Date(d); return (x.getFullYear()-RANGE_START.getFullYear())*12 + (x.getMonth()-RANGE_START.getMonth()) + (x.getDate()-1)/daysIn(x); };
+const daysIn = x => new Date(x.getFullYear(), x.getMonth()+1, 0).getDate();
+const pct = d => Math.max(0, Math.min(100, monthIndex(d)/MONTHS*100));
+
+function statusOf(p){
+  // open if today within any confirmed/estimated window; soon if next window starts within range; check for flagged
+  let open=false, soon=false, openEst=false;
+  for(const g of p.gantt){
+    const s=new Date(g.s), e=new Date(g.e); e.setHours(23,59);
+    if(TODAY>=s && TODAY<=e){ open=true; openEst=g.est; }
+    else if(s>TODAY){ soon=true; }
+  }
+  if(p.check) return {cls:'check', text:'공고 확인 필요'};
+  if(open) return {cls:'open', text: openEst ? '접수 중(예상)' : '접수 중'};
+  if(soon) return {cls:'soon', text:'접수 예정'};
+  return {cls:'closed', text:'마감'};
+}
+
+/* ---------- overview table ---------- */
+(function renderOverview(){
+  const tb = document.querySelector('#overviewTable tbody');
+  tb.innerHTML = PROGRAMS.map(p=>{
+    const st = statusOf(p);
+    return `<tr>
+      <td><a href="#card-${p.id}" class="name" style="color:inherit"><span class="dot" style="background:${p.color}"></span>${p.name}<small>${p.en}</small></a></td>
+      <td><b>${p.amount}</b><br><small style="color:var(--ink-3)">${p.amountNote}</small></td>
+      <td>${p.whoLabel}</td>
+      <td>${p.fields}</td>
+      <td>${p.nextLabel}${p.nextEst?' <span class="est">· 예상</span>':''}</td>
+      <td><span class="status ${st.cls}">${st.text}</span></td>
+    </tr>`;
+  }).join('');
+})();
+
+/* ---------- gantt ---------- */
+(function renderGantt(){
+  const root = document.getElementById('gantt');
+  root.style.setProperty('--months', MONTHS);
+  const heads = [];
+  for(let i=0;i<MONTHS;i++){
+    const d = new Date(RANGE_START.getFullYear(), RANGE_START.getMonth()+i, 1);
+    const isJan = d.getMonth()===0 || i===0;
+    heads.push(`<div class="${isJan?'y':''}">${isJan? d.getFullYear()+'년 ' : ''}${d.getMonth()+1}월</div>`);
+  }
+  let html = `<div class="g-head"><div>프로그램</div>${heads.join('')}</div>`;
+  for(const [idx,p] of PROGRAMS.entries()){
+    const cells = Array.from({length:MONTHS},()=>'<div class="g-cell"></div>').join('');
+    const bars = p.gantt.filter(g=> new Date(g.e)>=RANGE_START).map(g=>{
+      const s = Math.max(0, pct(g.s)), e = pct(new Date(new Date(g.e).getTime()+86400000));
+      return `<div class="bar ${g.est?'est':''}" style="left:${s}%;width:${Math.max(e-s,1.2)}%;background:${p.color}" title="${g.label}: ${fmt(g.s)} – ${fmt(g.e)}">${g.label}</div>`;
+    }).join('');
+    const marks = (p.notify||[]).filter(n=> new Date(n.d)>=RANGE_START && monthIndex(n.d)<=MONTHS).map(n=>
+      `<div class="mark" style="left:${pct(n.d)}%;border-bottom-color:${p.color};${n.est?'opacity:.6':''}" data-label="${n.label}" title="결과 통보 ${n.est?'(예상) ':''}${fmt(n.d)}"></div>`).join('');
+    html += `<div class="g-row ${idx===0?'first':''}">
+      <div class="g-label"><span><span class="dot" style="background:${p.color}"></span>${p.name}</span><small>${p.amount}</small></div>
+      <div class="g-track" style="display:grid;grid-template-columns:repeat(${MONTHS},1fr)">${cells}
+        <div style="position:absolute;inset:0">${bars}${marks}</div>
+      </div>
+    </div>`;
+  }
+  root.innerHTML = html;
+  // today line
+  const rows = root.querySelectorAll('.g-track');
+  rows.forEach(r=>{ const t=document.createElement('div'); t.className='today'; t.style.left=pct(TODAY)+'%'; r.appendChild(t); });
+
+})();
+
+/* ---------- month checkpoints ---------- */
+(function renderMonths(){
+  const events = [];
+  for(const p of PROGRAMS){
+    for(const g of p.gantt){
+      events.push({d:g.s, t:`${p.name} ${g.label} 접수 개시`, est:g.est, color:p.color});
+      events.push({d:g.e, t:`${p.name} ${g.label} 접수 마감 (17:00 ET)`, est:g.est, color:p.color, deadline:true});
+    }
+    for(const n of (p.notify||[])) events.push({d:n.d, t:`${p.name} ${n.label} 결과 통보`, est:n.est, color:p.color});
+  }
+  const end = new Date(RANGE_START.getFullYear(), RANGE_START.getMonth()+MONTHS, 1);
+  const inRange = events.filter(e=> new Date(e.d)>=RANGE_START && new Date(e.d)<end).sort((a,b)=> new Date(a.d)-new Date(b.d));
+  const byMonth = {};
+  for(const e of inRange){ const x=new Date(e.d); const k=`${x.getFullYear()}-${x.getMonth()}`; (byMonth[k] ||= []).push(e); }
+  const root = document.getElementById('months');
+  let html='';
+  for(let i=0;i<MONTHS;i++){
+    const d = new Date(RANGE_START.getFullYear(), RANGE_START.getMonth()+i, 1);
+    const k=`${d.getFullYear()}-${d.getMonth()}`;
+    const list = byMonth[k]||[];
+    if(!list.length) continue;
+    html += `<div class="month"><h4>${d.getFullYear()}년 ${d.getMonth()+1}월 <small>${list.length}건</small></h4><ul>${
+      list.map(e=>`<li><span class="d">${String(new Date(e.d).getDate()).padStart(2,'0')}일</span><span class="t"><span class="dot" style="background:${e.color}"></span>${e.deadline?'<b>':''}${e.t}${e.deadline?'</b>':''}${e.est?' <small>(예상)</small>':''}</span></li>`).join('')
+    }</ul></div>`;
+  }
+  root.innerHTML = html;
+})();
+
+/* ---------- cards ---------- */
+(function renderCards(){
+  const root = document.getElementById('cards');
+  root.innerHTML = PROGRAMS.map(p=>{
+    const st = statusOf(p);
+    const tl = p.timeline.map(t=> t.h ? `<li class="sub-h">${t.h}</li>` :
+      `<li class="${t.est?'est':''}"><span class="when">${t.when}</span>${t.est?'<span class="est-lbl">예상</span>':''}<br><span class="what">${t.what}</span></li>`).join('');
+    return `<article class="card" id="card-${p.id}" style="--c:${p.color}" data-who="${p.who.join(' ')}" data-where="${p.where.join(' ')}" data-status="${st.cls}">
+      <div class="card-head">
+        <div><h3>${p.name}<small>${p.en}</small></h3></div>
+        <div class="amt">${p.amount}<small>${p.amountNote}</small></div>
+      </div>
+      <div class="tags"><span class="status ${st.cls}">${st.text}</span>${p.tags.map(t=>`<span class="tag">${t}</span>`).join('')}</div>
+      <div class="summary">${p.summary}</div>
+      <div class="grid3">
+        <div class="col"><h4><span class="n">1</span>자격 요건</h4><ul>${p.elig.map(e=>`<li>${e}</li>`).join('')}</ul></div>
+        <div class="col docs"><h4><span class="n">2</span>제출 서류</h4><ul>${p.docs.map(e=>`<li>${e}</li>`).join('')}</ul></div>
+        <div class="col"><h4><span class="n">3</span>타임라인</h4><ul class="tl">${tl}</ul></div>
+      </div>
+      <div class="card-foot">
+        <div class="tip"><b>준비 팁.</b> ${p.tip}</div>
+        <div class="links">${p.links.map(l=>`<a href="${l[1]}" target="_blank" rel="noopener">${l[0]} ↗</a>`).join('')}</div>
+      </div>
+    </article>`;
+  }).join('');
+})();
+
+/* ---------- filters ---------- */
+(function filters(){
+  const state = {who:'all', where:'all', status:'all'};
+  const btns = document.querySelectorAll('#filters .fbtn');
+  btns.forEach(b=> b.addEventListener('click', ()=>{
+    state[b.dataset.f] = b.dataset.v;
+    btns.forEach(x=>{ if(x.dataset.f===b.dataset.f) x.setAttribute('aria-pressed', String(x===b)); });
+    apply();
+  }));
+  function apply(){
+    document.querySelectorAll('#cards .card').forEach(c=>{
+      const okWho = state.who==='all' || c.dataset.who.split(' ').includes(state.who);
+      const okWhere = state.where==='all' || c.dataset.where.split(' ').includes(state.where);
+      const okSt = state.status==='all' || c.dataset.status===state.status || (state.status==='open' && c.dataset.status==='check');
+      c.classList.toggle('hidden', !(okWho && okWhere && okSt));
+    });
+  }
+})();
+
+/* ---------- checklist persistence ---------- */
+(function prep(){
+  const KEY='nyfa-prep-v1';
+  let saved={}; try{ saved=JSON.parse(localStorage.getItem(KEY)||'{}'); }catch(e){}
+  document.querySelectorAll('#prepList input').forEach(i=>{
+    i.checked = !!saved[i.id];
+    i.addEventListener('change', ()=>{ saved[i.id]=i.checked; try{ localStorage.setItem(KEY, JSON.stringify(saved)); }catch(e){} });
+  });
+})();
+
+/* ---------- theme ---------- */
+(function theme(){
+  const btn=document.getElementById('modeBtn'); const KEY='nyfa-theme';
+  const root=document.documentElement;
+  let t=null; try{ t=localStorage.getItem(KEY); }catch(e){}
+  if(t) root.setAttribute('data-theme', t);
+  const sync=()=>{ const dark = root.getAttribute('data-theme')==='dark' || (!root.getAttribute('data-theme') && matchMedia('(prefers-color-scheme: dark)').matches); btn.textContent = dark ? '☀️ 라이트 모드' : '🌙 다크 모드'; };
+  sync();
+  btn.addEventListener('click', ()=>{
+    const dark = root.getAttribute('data-theme')==='dark' || (!root.getAttribute('data-theme') && matchMedia('(prefers-color-scheme: dark)').matches);
+    const next = dark ? 'light' : 'dark'; root.setAttribute('data-theme', next);
+    try{ localStorage.setItem(KEY, next); }catch(e){} sync();
+  });
+})();
+</script>
+</body>
+</html>
